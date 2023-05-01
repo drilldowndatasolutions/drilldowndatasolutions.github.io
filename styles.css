@@ -165,17 +165,6 @@ label {
   margin-bottom: 5px;
 }
 
-.show {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  width: 100%;
-}
-
 footer {
   text-align: center;
   padding: 20px 0;
@@ -218,6 +207,7 @@ footer {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
   }
   
   nav ul li {
