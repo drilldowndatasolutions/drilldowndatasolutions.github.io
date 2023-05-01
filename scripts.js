@@ -2,17 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('nav ul');
 
-  navToggle.addEventListener('click', toggleNav);
+  navToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('show');
+  });
 });
 
-function toggleNav() {
-  const navMenu = document.querySelector('nav ul');
-  navMenu.classList.toggle('show');
-}
-
-const backToTopButton = document.getElementById("back-to-top");
-
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
+  const backToTopButton = document.getElementById("back-to-top");
   if (window.pageYOffset > 300) {
     backToTopButton.style.display = "block";
   } else {
@@ -20,6 +16,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+document.getElementById("back-to-top").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });

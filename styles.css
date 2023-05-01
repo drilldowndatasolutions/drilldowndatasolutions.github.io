@@ -59,6 +59,7 @@ nav {
   display: flex;
   align-items: center;
   flex: 1;
+  position: relative;
 }
 
 nav ul {
@@ -162,6 +163,17 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
 }
 
 footer {
