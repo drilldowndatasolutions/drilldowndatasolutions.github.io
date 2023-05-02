@@ -119,7 +119,7 @@ nav ul li a:hover {
 }
 
 .contact-form {
-  max-width: 500px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -127,13 +127,19 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
 }
 
 .form-field {
-  flex: 1;
+  flex: 1.5;
   margin-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
+
+}
+
+.form-field input {
+  width: 75%; 
 }
 
 textarea {
@@ -226,6 +232,19 @@ footer {
   color: #333; 
   margin-left: -1rem; 
   margin-right: -1rem; 
+}
+
+.message-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 768px) {
