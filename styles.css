@@ -261,4 +261,9 @@ footer {
   nav ul li a {
     font-size: 18px;
   }
+
+  .blog-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 }
