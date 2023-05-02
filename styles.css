@@ -226,8 +226,8 @@ footer {
   }
 
   .services-card {
-    flex: 0 0 95%;
-    margin: 1rem auto; 
+    flex: 0 0 100%;
+    margin: 1rem 0; 
   }
 
   .show {
