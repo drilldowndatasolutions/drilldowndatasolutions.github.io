@@ -225,6 +225,10 @@ footer {
     display: block;
   }
 
+  .services-section {
+    padding: 0; 
+  }
+
   .services-card {
     flex: 0 0 100%;
     margin: 1rem 0; 
