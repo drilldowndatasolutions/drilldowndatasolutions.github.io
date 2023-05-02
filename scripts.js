@@ -23,31 +23,39 @@ document.getElementById("back-to-top").addEventListener("click", function () {
   });
 });
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
+var contactForm = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
   event.preventDefault();
-
-  const xhr = new XMLHttpRequest();
-  const formData = new FormData(event.target);
-
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200 && xhr.responseText === "success") {
-        showMessagePopup();
-      } else {
-        alert("An error occurred while sending the email. Please try again.");
-      }
+  var status = document.createElement("p");
+  status.id = "contact-form-status";
+  contactForm.appendChild(status);
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: contactForm.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
     }
-  };
+  }).then(response => {
+    if (response.ok) {
+      showSuccessPopup();
+      contactForm.reset();
+    } else {
+      status.innerHTML = "Oops! There was a problem submitting your form";
+    }
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form";
+  });
+}
 
-  xhr.open("POST", "send_email.php", true);
-  xhr.send(formData);
-});
-
-function showMessagePopup() {
-  const popup = document.getElementById("message-popup");
-  popup.style.display = "block";
+function showSuccessPopup() {
+  const successPopup = document.getElementById("message-popup");
+  successPopup.style.display = "block";
 
   setTimeout(function () {
-    popup.style.display = "none";
+    successPopup.style.display = "none";
   }, 5000);
 }
+
+contactForm.addEventListener("submit", handleSubmit);

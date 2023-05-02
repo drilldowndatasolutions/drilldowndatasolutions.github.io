@@ -237,13 +237,13 @@ footer {
 .message-popup {
   position: fixed;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #4caf50;
+  right: 20px;
+  background-color: #4CAF50;
   color: white;
-  padding: 1rem;
+  text-align: center;
   border-radius: 5px;
-  display: none;
+  padding: 10px;
+  font-size: 1.1rem;
   z-index: 1000;
 }
 
