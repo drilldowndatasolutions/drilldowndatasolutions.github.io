@@ -190,6 +190,27 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.services-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.services-card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(50% - 1rem);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.services-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     display: none;
@@ -197,6 +218,10 @@ footer {
 
   .nav-toggle {
     display: block;
+  }
+
+  .services-card {
+    flex: 0 0 100%;
   }
 
   .show {
