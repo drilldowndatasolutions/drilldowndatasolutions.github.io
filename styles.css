@@ -193,8 +193,10 @@ footer {
 .services-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .services-card {
@@ -222,7 +224,7 @@ footer {
   }
 
   .services-card {
-    flex: 0 0 100%;
+    flex: 0 0 90%;
     margin: 1rem auto; 
   }
 
