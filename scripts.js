@@ -60,8 +60,3 @@ function showSuccessPopup() {
 
 contactForm.addEventListener("submit", handleSubmit);
 
-document.getElementById('custom-calendly-button').addEventListener('click', () => {
-  Calendly.initPopupWidget({url: 'https://calendly.com/dylanburd'});
-});
-
-

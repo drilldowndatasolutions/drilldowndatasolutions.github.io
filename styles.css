@@ -113,6 +113,52 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
+.cta-button-cal {
+  /* display: inline;
+  color: #fff; */
+  /* border: none; */
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  font-size: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#my-button {
+  /* background-color: #FFBC52; */
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  /* padding: 20px; */
+  border: none;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  color: #FFFFFF; /* set font color to white */
+  font-family: 'Courier New', Courier, monospace; /* set font style */
+}
+
+#my-button:hover {
+  /* background-color: #D1392A; */
+  transform: scale(1.1);
+  /* color: #FFFFFF; */
+}
+
+.cta-button-cal:hover {
+  /* color: #555; */
+  transform: scale(1.1);
+}
+
+.cta-large-text {
+  font-size: 24px;
+}
+
+.cta-small-text {
+  font-size: 18px;
+}
+
 .services-list {
   list-style-type: none;
   padding-left: 0;

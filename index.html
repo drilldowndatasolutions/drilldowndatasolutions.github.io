@@ -39,10 +39,20 @@
     <p>Your one-stop shop for data-driven business solutions.</p>
     <a href="services.html">
       <button class="cta-button">Learn More</button>
-    </a> 
+    </a>
     <br>
     <br>
-    <button class="cta-button" id="custom-calendly-button">Book an appointment</button>
+    <br>
+    <!-- <button class="cta-button-cal" id="custom-calendly-button">
+      <i class="fa-regular fa-calendar-days fa-2xl"></i>
+      <span class="cta-small-text"><br>Book an appointment</span>
+    </button> -->
+
+    <button id="my-button">
+      <img src="calendar.svg" alt="Calendar icon">
+      Free consultation
+    </button>
+    
 
     <!-- <div id="google-calendar-button-container">
       <button id="custom-google-calendar-button" class="cta-button">Book an appointment</button>
@@ -72,8 +82,8 @@
   </footer>
   <button id="back-to-top" title="Back to top" onclick="scrollToTop()">↑</button>
   <script>
-    document.getElementById('custom-calendly-button').addEventListener('click', () => {
-      Calendly.initPopupWidget({url: 'https://calendly.com/dylanburd'});
+    document.getElementById('my-button').addEventListener('click', () => {
+      Calendly.initPopupWidget({url: 'https://calendly.com/dylanburd/30min'});
       return false;
     });
   </script>
