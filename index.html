@@ -13,6 +13,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="site.webmanifest">
   <script src="scripts.js" defer></script>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
   <header>
@@ -40,11 +42,13 @@
     </a> 
     <br>
     <br>
+    <button class="cta-button" id="custom-calendly-button">Book an appointment</button>
+
     <!-- <div id="google-calendar-button-container">
       <button id="custom-google-calendar-button" class="cta-button">Book an appointment</button>
     </div> -->
 
-    <div id="google-calendar-button-container">
+    <!-- <div id="google-calendar-button-container">
       <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
       <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
       <script>
@@ -60,12 +64,18 @@
         });
       })();
       </script>
-    </div> 
+    </div>  -->
   </main>
 
   <footer>
     <p>&copy; 2023 Drilldown Data Solutions. All rights reserved.</p>
   </footer>
   <button id="back-to-top" title="Back to top" onclick="scrollToTop()">↑</button>
+  <script>
+    document.getElementById('custom-calendly-button').addEventListener('click', () => {
+      Calendly.initPopupWidget({url: 'https://calendly.com/dylanburd'});
+      return false;
+    });
+  </script>
 </body>
 </html>
