@@ -124,10 +124,8 @@ nav ul li a:hover {
   background-color: transparent !important;
   width: 150px;
   height: 150px;
-  padding-bottom: 20px;
-  padding-top: 20px;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
