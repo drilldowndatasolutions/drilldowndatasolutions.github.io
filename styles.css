@@ -134,6 +134,7 @@ nav ul li a:hover {
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace; /* set font style */
   box-sizing: border-box;
+  text-align: center;
 }
 
 #my-button:hover {
