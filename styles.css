@@ -159,9 +159,9 @@ nav ul li a:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s;
-  color: #FFFFFF; /* set font color to white */
+  color: #FFFFFF; 
   font-size: 16px;
-  font-family: 'Courier New', Courier, monospace; /* set font style */
+  font-family: 'Courier New', Courier, monospace; 
   box-sizing: border-box;
   text-align: center;
 }
@@ -266,8 +266,8 @@ footer {
   justify-content: space-between;
   margin-bottom: 2rem;
   /* padding: 1rem; */
-  margin-left: -1rem; 
-  margin-right: -1rem; 
+  /* margin-left: -1rem; 
+  margin-right: -1rem;  */
 }
 
 .services-card {
@@ -294,8 +294,8 @@ footer {
   padding: 1.5rem;
   margin-bottom: 2rem;
   color: #333; 
-  margin-left: -1rem; 
-  margin-right: -1rem; 
+  /* margin-left: -1rem; 
+  margin-right: -1rem;  */
 }
 
 .message-popup {
@@ -379,6 +379,13 @@ footer {
   .blog-card {
     padding: 1rem;
     margin-bottom: 1rem;
+    margin-left: -1rem; 
+    margin-right: -1rem; 
+  }
+
+  .services-section {
+    margin-left: -1rem; 
+    margin-right: -1rem; 
   }
   
 }
