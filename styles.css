@@ -276,6 +276,34 @@ footer {
   z-index: 1000;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: center;
+  color:#333
+}
+
+.testimonial img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  margin: 0 0 1.5rem;
+}
+
+.testimonial p:last-of-type {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     display: none;
