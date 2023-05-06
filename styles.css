@@ -118,14 +118,43 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
+/* #my-button {
+  background-color: transparent !important;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: #FFFFFF; 
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#my-button:hover {
+  transform: scale(1.1);
+}
+
+#my-button img {
+  width: 30px;
+  height: auto;
+  margin-bottom: 5px;
+} */
+
 #my-button {
   /* background-color: #FFBC52; */
   display: inline-block;
-  background-color: transparent !important;
-  width: 150px;
-  height: 150px;
+  background-color: transparent;
+  /* width: 1px;
+  height: 1px; */
   margin-top: 30px;
   margin-bottom: 30px;
+  /* padding: 0px; */
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -142,6 +171,12 @@ nav ul li a:hover {
   transform: scale(1.1);
   /* color: #FFFFFF; */
 }
+
+#my-button img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+} 
 
 .services-list {
   list-style-type: none;
